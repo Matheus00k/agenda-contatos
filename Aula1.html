@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Contatos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="agenda">
+    <header>
+        <h1>Criar contato</h1>
+    </header>
+    <div class="imagem">
+        <img src="img/perfil.png" alt="">
+    </div>
+    <form  id="idContatoForm">
+        <div class="container">
+            <div class="imgIcon">
+                <i class="fa fa-user-secret" aria-hidden="true"></i>
+            </div>
+            <div class="contato nome">
+                <input type="text" id="idNome" placeholder="Nome"/>
+            </div>
+        </div>  
+        <div class="container">
+            <div class="imgIcon">
+                <i class="fa fa-user-o" aria-hidden="true"></i>
+            </div>
+            <div class="contato sobrenome">
+                <input type="text" id="idSobrenome" placeholder="Sobrenome">
+            </div>
+        </div>
+        <div class="container">
+            <div class="imgIcon">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+            </div>
+            <div class="contato numero">
+                <input type="tel" id="idTel" placeholder="Telefone">
+            </div>
+            <div class="comboBox">
+                <select name="Marcador" id="idTelTipo">
+                    <option value="" disabled selected>Selecione a Opção</option>
+                    <option value="celular">Celular</option>
+                    <option value="fixoCasa">Casa</option>
+                    <option value="fixoTrabalho">Trabalho</option>
+                    <option value="fax">Fax</option>
+                </select>
+            </div>
+        </div>
+        <div class="container">
+            <div class="imgIcon">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+            </div>
+            <div class="contato email">
+                <input type="email" id="idEmail" placeholder="E-mail">
+            </div>
+        </div>
+        <div class="btnSalvarCancelar">
+            <div class="cancelar">
+                <input type="submit" value="Cancelar" class="btnCancelar">
+            </div>
+            <div class="salvar">
+                <input type="submit" value="Salvar" class="btnSalvar" >
+            </div>
+        </div>
+    </form>
+        <div class="Lista">
+            <input type="text" id="idPesquisa" placeholder="Pesquisar">
+            <table id="idTabelaContatos">
+                <tbody></tbody>
+            </table>           
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="js/script.js"></script>
+</html>
